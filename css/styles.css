@@ -215,11 +215,17 @@ button {
     color: #fd9222;
   }
   .nav-link.active::after {
+    content: none;
+  }
+  .nav-link {
+    position: relative;
+  }
+  .nav-link:hover::after,
+  .nav-link:focus::after {
     content: "";
     position: absolute;
     bottom: 20px;
     left: 0;
-    display: block;
     width: 100%;
     height: 4px;
     border-radius: 2px;
@@ -264,7 +270,6 @@ button {
     margin-right: 90px;
   }
 }
-/* #endregion */
 
 /* #region nav-modal */
 .nav-modal-overlay {
@@ -332,7 +337,6 @@ button {
     display: none;
   }
 }
-/* #endregion */
 
 /* #region hero */
 .hero {
