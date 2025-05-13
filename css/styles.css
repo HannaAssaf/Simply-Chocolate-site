@@ -1419,3 +1419,30 @@ input[type="checkbox"]:checked + label .modal-form-checkbox {
   transform: scale(1.03);
   opacity: 0.95;
 }
+
+.benefits-wrapper {
+  transition: border-color 0.3s ease, transform 0.3s ease;
+  will-change: border-color, transform;
+}
+
+.benefits-wrapper .benefits-icons {
+  transition: stroke 0.3s ease, transform 0.3s ease;
+  will-change: stroke, transform;
+}
+.benefits-item:hover .benefits-wrapper {
+  border-color: #fd9222;
+  transform: scale(1.05);
+}
+.benefits-item:hover .benefits-icons {
+  stroke: #fd9222;
+  transform: scale(1.1);
+}
+.response-item {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  will-change: transform, opacity;
+}
+
+.response-item:hover {
+  transform: scale(1.03);
+  opacity: 0.95;
+}
