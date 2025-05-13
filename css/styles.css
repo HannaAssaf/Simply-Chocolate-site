@@ -471,7 +471,6 @@ button {
       url("../images/hero/hero-bg_desk@2x.jpeg");
   }
 }
-/* #endregion */
 
 /* #region benefits */
 .benefits {
@@ -535,7 +534,6 @@ button {
     display: block;
   }
 }
-/* #endregion */
 
 /* #region ingridients */
 .ingridients {
@@ -1405,4 +1403,15 @@ input[type="checkbox"]:checked + label .modal-form-checkbox {
     height: 45px;
   }
 }
-/* #endregion */
+/* animation */
+
+.ingridients-item,
+.products-item {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  will-change: transform, opacity;
+}
+.ingridients-item:hover,
+.products-item:hover {
+  transform: scale(1.03);
+  opacity: 0.95;
+}
