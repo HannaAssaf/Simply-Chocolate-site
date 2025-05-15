@@ -55,7 +55,7 @@ button {
   font-size: 14px;
   cursor: pointer;
   text-align: center;
-  padding: 12px 28px;
+  padding: 12px 0px;
   background: transparent;
   border-radius: 100px;
   border: 1px solid transparent;
@@ -154,6 +154,8 @@ button {
 .header-container {
   display: flex;
   align-items: center;
+  padding-right: 0;
+  padding-left: 0;
 }
 .nav {
   display: flex;
