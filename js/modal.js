@@ -22,11 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
     modal.classList.toggle("is-open");
   }
 
-  // ===== ОБРОБНИК ФОРМИ =====
   const form = document.querySelector("#choco-form");
   if (form) {
     form.addEventListener("submit", function (e) {
-      e.preventDefault(); // зупиняємо стандартну відправку
+      e.preventDefault();
 
       const name = document.querySelector("#user-name").value.trim();
       const email = document.querySelector("#user-email").value.trim();
@@ -39,13 +38,12 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
-      // Тут можна надіслати через fetch або зберегти
       console.log({ name, email, phone, comment });
 
       alert("Form submitted successfully!");
       form.reset(); // очистити форму
       const modal = form.closest(".backdrop");
-      if (modal) toggleModal(modal); // закриваємо модалку
+      if (modal) toggleModal(modal);
     });
   }
 });
