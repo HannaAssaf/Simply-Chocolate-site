@@ -173,17 +173,9 @@
             for a moment of pure delight!
           </h1>
           <div class="hero-wrapper">
-            <button
-              class="button-accent"
-              type="button"
-              data-modal-open="modal2"
-            >
-              Buy now
-            </button>
-            <button class="button-primary" type="button">How it`s made</button>
-
-            <a class="desc hero-link" href="#benefits"
-              >scroll down
+            <a href="#product" class="button-accent">Buy now</a>
+            <a href="#made" class="button-primary">How it`s made</a>
+            <a href="#benefits" class="desc hero-link">scroll down
               <svg class="hero-icons" width="38" height="38">
                 <use href="./images/icons.svg#icon-arrow-down"></use>
               </svg>
@@ -481,7 +473,7 @@
         </div>
       </section>
       <!--Products-->
-      <section class="products">
+      <section class="products" id="product">
         <div class="container">
           <h2 class="title products-title">
             Our <span class="title span">products</span>
@@ -742,7 +734,7 @@
               </p>
             </li>
           </ul>
-          <button class="response-button" type="button">Leave a review</button>
+          <button class="response-button" type="button" data-modal-open="modal2">Leave a review</button>
         </div>
       </section>
     </main>
@@ -854,7 +846,7 @@
         <p class="title modal-title">
           LEAVE A REVIEW ABOUT&nbsp;<span class="span">OUR CHOCOLATE</span>
         </p>
-        <form id="choco-form"  class="modal-form" name="modal_from" autocomplete="off">
+        <form id="choco-form"  class="modal-form" name="modal_form" autocomplete="off">
           <div class="modal-form-container">
             <label class="modal-form-lable" for="user-name">Name<sup class="required-color">*</sup></label>
             <div class="modal-form-wrapper">

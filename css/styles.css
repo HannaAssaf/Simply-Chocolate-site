@@ -408,17 +408,33 @@ button {
   margin-bottom: 32px;
 }
 .button-accent {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 120px;
   height: 41px;
   color: #fff;
+  font-weight: 600;
+  border-radius: 100px;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0;
   background-color: #fd9222;
-  border-color: #fd9222;
+  border: 1px solid #fd9222;
 }
+
 .button-primary {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 159px;
   height: 41px;
+  font-size: 14px;
+  line-height: 100%;
   color: #fff;
-  border-color: #fff;
+  font-weight: 600;
+  border-radius: 100px;
+  border: 1px solid #fff;
 }
 .button-accent:hover,
 .button-accent:focus {
@@ -433,7 +449,6 @@ button {
 .hero-link {
   display: inline-flex;
   align-items: center;
-
   gap: 12px;
   transition: 300ms ease-in;
   transition-property: color;
@@ -456,6 +471,10 @@ button {
     font-size: 28px;
     max-width: 484px;
   }
+
+  .button-accent {
+    width: 144px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .hero-container {
@@ -470,6 +489,10 @@ button {
   .hero-link {
     margin-left: auto;
     gap: 14px;
+  }
+  .button-primary {
+    width: 183px;
+    height: 45px;
   }
 }
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi),
