@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log({ name, email, phone, comment });
 
       alert("Form submitted successfully!");
-      form.reset(); // очистити форму
+      form.reset();
       const modal = form.closest(".backdrop");
       if (modal) toggleModal(modal);
     });
