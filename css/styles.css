@@ -1262,7 +1262,13 @@ button {
 
 /* #region backdrop */
 .backdrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
+  padding: 24px;
+  overflow: auto;
+  inset: 0;
   top: 0;
   left: 0;
   width: 100%;
