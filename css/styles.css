@@ -1452,7 +1452,7 @@ button {
   }
 }
 .modal-form-agremeent {
-  margin-bottom: 0;
+  margin-bottom: 24px;
 }
 @media only screen and (min-width: 768px) {
   .modal-form-agremeent {
